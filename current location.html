@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title> current location Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: auto;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        .btn {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Address Form</h2>
+    <button class="btn">Use my current location</button>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="tel" placeholder="10-digit mobile number" required>
+        <input type="text" placeholder="Pincode" required>
+        <input type="text" placeholder="Locality" required>
+        <input type="text" placeholder="Address (Area and Street)" required>
+        <input type="text" placeholder="City/District/Town" required>
+        <select required>
+            <option value="">--Select State--</option>
+            <option value="State1">State1</option>
+            <option value="State2">State2</option>
+        </select>
+        <input type="text" placeholder="Landmark (Optional)">
+        <input type="tel" placeholder="Alternate Phone (Optional)">
+        <label>
+            <input type="radio" name="address_type" value="Home"> Home
+        </label>
+        <label>
+            <input type="radio" name="address_type" value="Work"> Work
+        </label>
+        <button class="btn">Save</button>
+    </form>
+</div>
+
+</body>
+</html>
